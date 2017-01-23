@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <meta charset="utf-8">
+  <script>
+    oDiv = document.getElementById('div1');
+    alert(oDiv.firstChild.NodeValue);
+  </script>
+</head>
+<body>
+  <div id="div1">666</div>
+</body>
+</html>
