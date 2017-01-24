@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D练习1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            perspective:500px;
+        }
+        ul{
+            width: 280px;
+            height: 280px;
+            /*border: 1px solid #000;*/
+            margin: 100px auto;
+            position:relative;
+            transform:rotateX(0deg) rotateY(0deg);
+            transform-style: preserve-3d;
+            animation:ball 10s linear 0s infinite normal;
+        }
+        @keyframes ball{
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul li{
+            list-style: none;
+            width: 280px;
+            height: 280px;
+            line-height: 280px;
+            position:absolute;
+        }
+        ul li:nth-child(1){
+            background-color: red;
+            transform:rotateX(90deg) translateZ(140px) scaleX(1.78);
+        }
+        ul li:nth-child(2){
+            background-color: orange;
+            transform:rotateX(180deg) translateZ(140px) scaleX(1.78);
+        }
+        ul li:nth-child(3){
+            background-color: yellow;
+            transform:rotateX(270deg) translateZ(140px) scaleX(1.78);
+        }
+        ul li:nth-child(4){
+            background-color: green;
+            transform:rotateX(360deg) translateZ(140px) scaleX(1.78);
+        }
+        ul li:nth-child(5){
+            background-color: skyblue;
+            transform:rotateY(90deg) translateZ(249px);
+        }
+        ul li:nth-child(6){
+            background-color: purple;
+            transform:rotateY(90deg) translateZ(-249px);
+        }
+        ul li img{
+            width: 280px;
+            height: 280px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="image/a1.jpg" alt=""></li>
+    <li><img src="image/a2.jpg" alt=""></li>
+    <li><img src="image/a3.jpg" alt=""></li>
+    <li><img src="image/a4.jpg" alt=""></i>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

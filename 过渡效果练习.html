@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡效果练习</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 960px;
+            height: 340px;
+            background-color: lightpink;
+            margin:100px auto;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            width: 160px;
+            height: 340px;
+            transition-property: width;
+            transition-duration: 3s;
+        }
+        ul:hover li{
+            width: 80px;
+        }
+        ul li:hover{
+            width: 560px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><img src="image/1.jpg" alt=""></li>
+    <li><img src="image/2.jpg" alt=""></li>
+    <li><img src="image/3.jpg" alt=""></li>
+    <li><img src="image/4.jpg" alt=""></li>
+    <li><img src="image/5.jpg" alt=""></li>
+    <li><img src="image/6.jpg" alt=""></li>
+</ul>
+
+</body>
+</html>

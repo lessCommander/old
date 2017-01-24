@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D练习2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("image/b0.png") no-repeat;
+            background-size:cover;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+        }
+        ul{
+            width: 150px;
+            height: 150px;
+            /*background-color: gold;*/
+            position:absolute;
+            left:50%;
+            margin-left: -75px;
+            bottom:80px;
+            transform-style:preserve-3d;
+            -webkit-transform-style:preserve-3d;
+            -moz-transform-style:preserve-3d;
+            animation:computer 12s linear 0s infinite normal;
+            -webkit-animation:computer 12s linear 0s infinite normal;
+            -moz-animation:computer 12s linear 0s infinite normal;
+        }
+        @keyframes computer{
+            from{
+                transform: rotateX(-15deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-15deg) rotateY(360deg);
+            }
+        }
+        @-webkit-keyframes computer{
+            from{
+                transform: rotateX(-15deg) rotateY(0deg);
+                -webkit-transform: rotateX(-15deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-15deg) rotateY(360deg);
+                -webkit-transform: rotateX(-15deg) rotateY(360deg);
+            }
+        }
+        @-moz-keyframes computer{
+            from{
+                transform: rotateX(-15deg) rotateY(0deg);
+                -moz-transform: rotateX(-15deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-15deg) rotateY(360deg);
+                -moz-transform: rotateX(-15deg) rotateY(360deg);
+            }
+        }
+        ul li{
+            list-style: none;
+            width: 150px;
+            height: 150px;
+            position:absolute;
+            left: 0;
+            right: 0;
+        }
+        ul li:nth-child(1){
+            background-color: black;
+            transform:rotateY(60deg) translateZ(200px);
+            -webkit-transform:rotateY(60deg) translateZ(200px);
+            -moz-transform:rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2) {
+            background-color:black;
+            transform:rotateY(120deg) translateZ(200px);
+            -webkit-transform:rotateY(120deg) translateZ(200px);
+            -moz-transform:rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3) {
+            background-color:black;
+            transform:rotateY(180deg) translateZ(200px);
+            -webkit-transform:rotateY(180deg) translateZ(200px);
+            -moz-transform:rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4) {
+            background-color:black;
+            transform:rotateY(240deg) translateZ(200px);
+            -webkit-transform:rotateY(240deg) translateZ(200px);
+            -moz-transform:rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5) {
+            background-color:black;
+            transform:rotateY(300deg) translateZ(200px);
+            -webkit-transform:rotateY(300deg) translateZ(200px);
+            -moz-transform:rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6) {
+            background-color:black;
+            transform:rotateY(360deg) translateZ(200px);
+            -webkit-transform:rotateY(360deg) translateZ(200px);
+            -moz-transform:rotateY(360deg) translateZ(200px);
+        }
+        ul li img{
+            width: 150px;
+            height: 150px;
+            border: 3px solid black;
+            box-sizing:border-box;
+            box-shadow: 0 0 50px skyblue;
+          }
+        ul:hover{
+            animation-play-state:paused;
+            -webkit-animation-play-state:paused;
+            -moz-animation-play-state:paused;
+        }
+        ul:hover li img{
+            opacity:0.5;
+        }
+        ul li:hover img{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="image/b1.jpg" alt=""></li>
+        <li><img src="image/b2.jpg" alt=""></li>
+        <li><img src="image/b3.jpg" alt=""></li>
+        <li><img src="image/b4.jpg" alt=""></li>
+        <li><img src="image/b5.jpg" alt=""></li>
+        <li><img src="image/b6.jpg" alt=""></li>
+    </ul>
+</body>
+</html>
